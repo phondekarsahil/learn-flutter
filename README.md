@@ -135,3 +135,9 @@ cd <app-name>
 ```
 flutter run
 ```
+
+## Stateless vs Stateful
+
+* In flutter we can either have stateless or stateful widgets
+* __Stateless Widgets:__ The state of the widget cannot change over time.
+* __Stateful Widgets:__ The state of the widget can change over time.
