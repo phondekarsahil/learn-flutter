@@ -123,3 +123,15 @@
         superUser.publish();
     }
     ```
+
+## Creating flutter project
+
+```
+flutter create <app-name>
+```
+```
+cd <app-name>
+```
+```
+flutter run
+```
