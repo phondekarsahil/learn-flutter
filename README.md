@@ -141,3 +141,15 @@ flutter run
 * In flutter we can either have stateless or stateful widgets
 * __Stateless Widgets:__ The state of the widget cannot change over time.
 * __Stateful Widgets:__ The state of the widget can change over time.
+
+## Common Widgets
+
+* Images, Buttons and Icons
+
+## Containers, Margins and Padding
+
+    One of the simplest layout widgets that flutter has to offer is the container widget. It acts as a container to another widget or wraps around it. It's basically a convenience widget and it comes along with some properties like margin and padding and color etc.
+    
+    If we don't have a child inside a container, it takes up the whole scrren space available. But if we have a child for example a text widget then the container restricts itself to the size of that child widget.
+
+    Now one of the good things about containers is that we can add padding and margin to our child

@@ -15,29 +15,11 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        child: Column(
-          children: [
-            const Icon(
-              Icons.airport_shuttle,
-              color: Colors.lightBlue,
-              size: 50.0,
-            ),
-            ElevatedButton(
-              onPressed: () {
-                // ignore: avoid_print
-                print("You clicked me");
-              },
-              child: const Text("Click me"),
-            ),
-            ElevatedButton.icon(
-                onPressed: () {},
-                icon: const Icon(Icons.mail),
-                label: const Text("Mail me")),
-            IconButton(
-                onPressed: () {}, icon: const Icon(Icons.alternate_email))
-          ],
-        ),
+      body: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
+        margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
+        color: Colors.grey[400],
+        child: const Text("Hello"),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
