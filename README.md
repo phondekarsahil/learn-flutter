@@ -159,3 +159,38 @@ flutter run
 ## Expanded Widget 
 
     This works very similar to flexbox as in web
+
+## Stateful Widgets
+
+    A stateless which is one that doesn't really change after it's been created. It doesn't contain any kind of state of data that changes over time or in reaction to some interaction. 
+    
+    A stateful widget is one which can change state over time or it can contain dynamic data which changes. 
+    
+    So the data that changes over time is going to be stored in what's known as a state object.
+
+    So it's going to contain values which can change such as a number that we output on the screen or maybe a color which changes the background color.
+    
+    So when the state changes it means that obviously something has changed in the widget and therefore the UI over here is going to need to update to reflect that.
+
+```dart
+class TestWidget extends StatefulWidget {
+    TestWidget({Key? key}) : super(key: key);
+
+    @override
+    State<TestWidget> createState() => _TestWidgetState();
+}
+
+class _TestWidgetState extends State<TestWidget> {
+    @override
+    Widget build(BuildContext context) {
+        return Container();
+    }
+}    
+```
+    There are actually two classes in above example, the first one is this stateful widget class so this extends stateful widget
+    
+    Inside here we have this function `createState` which is then returning the function. 
+    
+    Now this is instantiating this second class that it creates for us and this is a state object so it's building a state object for this stateful widget which we just created and it's linking this state object to this widget.
+    
+    So now inside this state object right here which is just another class we can actually define data and we can change that state over time now also inside this state object we have this build function again and we return a widget.
