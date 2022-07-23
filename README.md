@@ -153,3 +153,5 @@ flutter run
     If we don't have a child inside a container, it takes up the whole scrren space available. But if we have a child for example a text widget then the container restricts itself to the size of that child widget.
 
     Now one of the good things about containers is that we can add padding and margin to our child
+
+## Rows and Columns
