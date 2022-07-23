@@ -155,3 +155,7 @@ flutter run
     Now one of the good things about containers is that we can add padding and margin to our child
 
 ## Rows and Columns
+
+## Expanded Widget 
+
+    This works very similar to flexbox as in web
