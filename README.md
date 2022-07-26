@@ -240,3 +240,21 @@ void main() {
     
     `dispose` method:
     * This is triggered when the widget or the state object is completely removed
+
+## Asychronous code
+
+    Asynchronous code represents an action that starts now and finishes sometime in the future. 
+    
+    An example of this could be interacting with an API endpoint or a database or something to get some data 
+    
+    So we start the request but it doesn't finish straight away because it might take a second or two to complete that request to go out and get the data.
+     
+    So it finishes some time after the initial request is made and once we get that data back in the meantime our code should not stop until that request is complete and the data comes back 
+    
+    Asynchronous code should be non-blocking so that while the request is being made the rest of the code in our file could carry on 
+    
+    So to handle asynchronous code in flutter we're going to use a combination of asynchronous functions, the await keyword and something called futures.
+    
+    Now `async` in a way a very similar to `async` `await` in JavaScript 
+    
+    `Futures` are a type of data very similar to `Promises` in JavaScript
