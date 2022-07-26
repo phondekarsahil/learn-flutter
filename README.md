@@ -213,3 +213,30 @@ void main() {
 ```
 
     So this is pretty much how a routing is going to work we're going to have some kind of route (key) and then whatever widget (value) we want to load up for that route using a map.
+
+## Widget Lifecycles
+
+    There are basically two types of widget a stateless one and a stateful one.
+    
+    Now a stateless widget is that which cannot have a state and none of the data changes inside that and also the build function only runs once inside that widget when it's created 
+    
+    So if we were to try and change something over time that's not going to be updated in the screen to reflect that because it's completely stateless once it's built.
+    
+    It doesn't then rebuild itself when things change and if we wanted something to update in a stateless widget what we'd have to do is destroy the widget completely and then create a new instance of it with some different data
+    
+    Now a stateful widget that can have state which changes over time 
+    
+    So for example say we had some kind of counter widget and that counter variable inside it changed over time. Now to change that what we do is call the `setState` method. And when we change the data inside that method it triggers the build function to rebuild that widget so that we see that updated on the screen 
+    
+    Now stateful widgets also have a couple of different life cycle methods that we can tap into 
+    
+    `initstate` method:
+    * It is the first method to be called once our state object has been created 
+    * This method is only called once when the widget is first created and it's probably a good place to subscribe to streams or any kind of object that's going to change our widget data in the future
+
+    `build` method:
+    * This actually builds the widget tree and it runs quite a lot in a stateful widget because it's triggered every time we use setState 
+    * So we use setState to change the data and that triggers the build function to rebuild the widget tree so that we see that change on the screen
+    
+    `dispose` method:
+    * This is triggered when the widget or the state object is completely removed
