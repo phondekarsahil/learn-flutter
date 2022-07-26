@@ -258,3 +258,17 @@ void main() {
     Now `async` in a way a very similar to `async` `await` in JavaScript 
     
     `Futures` are a type of data very similar to `Promises` in JavaScript
+
+## Flutter Packages
+
+    Occasionally when we're creating flutter apps we're going to need to add in some complex functionality.
+    
+    Now that could be to implement some form of animation or maybe to work with files and folders on the device or something else that is going to require us to write a fair amount of code and logic 
+    
+    Now I suppose we could do all of this ourselves from scratch or we could make use of flutter packages
+    
+    Now lots of packages are basically just bundles of code and logic that other developers have already kindly written and which can normally be used to implement some kind of specialized functionality inside our own apps like a sliding menu or a date picker or some kind of file upload or something like that.
+    
+    Now we can use as many different packages as we want in our apps to do different things for us the one that we're going to be using
+
+    https://pub.dev/
