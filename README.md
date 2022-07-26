@@ -194,3 +194,22 @@ class _TestWidgetState extends State<TestWidget> {
     Now this is instantiating this second class that it creates for us and this is a state object so it's building a state object for this stateful widget which we just created and it's linking this state object to this widget.
     
     So now inside this state object right here which is just another class we can actually define data and we can change that state over time now also inside this state object we have this build function again and we return a widget.
+
+## Routing and Maps
+
+    Maps in darts are a bit like object literals in JavaScript or dictionaries in Python.
+    
+    They're basically just a set of key and value pairs 
+    
+    So what we're going to do is create a simple map here to see how we set them up and use them
+
+    And then we're going to take what we learn and apply them to create some routes inside our flutter app
+    
+```dart
+void main() {
+    Map student = { 'name': 'chun-li', 'age': 25 };
+    print(student['name']); // chun-li
+}
+```
+
+    So this is pretty much how a routing is going to work we're going to have some kind of route (key) and then whatever widget (value) we want to load up for that route using a map.
