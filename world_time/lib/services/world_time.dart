@@ -30,6 +30,7 @@ class WorldTime {
 
       isDayTime = now.hour > 6 && now.hour < 20 ? true : false;
     } catch (e) {
+      print("Caught error - $e");
       time = "Cound not get time Data";
     }
   }
